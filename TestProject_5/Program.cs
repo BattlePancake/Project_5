@@ -8,12 +8,6 @@
 // double operand1 = double.Parse(Console.ReadLine());
 // Console.Write("Please, choose your operation from available: \n+   -   *   /   %\n\n");
 // string sign =Console.ReadLine();
-// if (sign != "+" && sign != "-" && sign != "*" && sign != "/" && sign != "%")
-// {
-//     Console.WriteLine("Chosen operation isn't supported, please, try again.");
-//     Console.WriteLine("|-----------------Calculator-5000-Tron-*Finished*------|");
-//     return;
-// }
 // Console.Write("Please, enter 2nd number: ");
 // double operand2 = double.Parse(Console.ReadLine());
 // double result = 0;
@@ -44,6 +38,9 @@
 //     case "%":
 //         result = operand1 % operand2;
 //         Console.WriteLine($"Your calculation is: {operand1} % {operand2} = {result}");
+//         break;
+//     default:
+//         Console.WriteLine("Chosen operation isn't supported, please, try again.");
 //         break;
 // }
 // Console.WriteLine("|-----------------Calculator-5000-Tron-*Finished*------|");
@@ -193,3 +190,18 @@
 //         Console.Write($"Number {num1} is odd");
 //         break;
 // }  
+
+
+//----------------3rd way------------------------------
+
+
+// Console.WriteLine("--------------------Parity check app-------------------");
+// Console.Write("Enter your number: ");
+// double num1 = double.Parse(Console.ReadLine());
+// double num2 = num1 / 2;
+// int num3 = (int) num2;
+// double num4 = num2 - num3;
+// if (num4 != 0)
+//     Console.Write($"Number {num1} is odd.");
+// else
+//     Console.Write($"Number {num1} is even.");
